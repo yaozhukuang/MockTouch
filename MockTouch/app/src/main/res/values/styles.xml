@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MainMenuItem">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/shape_main_menu_item</item>
+        <item name="layout_constraintHorizontal_weight">1</item>
+        <item name="layout_constraintVertical_weight">1</item>
+    </style>
+
+    <style name="MainMenuItemVerticalDivider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">240dp</item>
+        <item name="android:background">#f5f6f7</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainMenuItemHorizontalDivider">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#f5f6f7</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TaskStepItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

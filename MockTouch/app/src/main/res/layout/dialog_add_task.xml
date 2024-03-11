@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f000000"
+    android:padding="12dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" />
+
+    <TextView
+        android:id="@+id/add_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/task_title"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_add_gesture_name"
+        android:importantForAutofill="no"
+        android:minWidth="150dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/add_task_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_task_name"
+        app:layout_constraintTop_toTopOf="@+id/add_task_name"
+        tools:ignore="LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/task_step_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/task_step"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/add_task_name"
+        app:layout_constraintTop_toBottomOf="@+id/add_task_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_step"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/task_step_title"
+        app:layout_constraintTop_toBottomOf="@+id/task_step_title" />
+
+    <EditText
+        android:id="@+id/repeat_count"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_add_gesture_name"
+        android:hint="@string/task_repeat"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minWidth="150dp"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/task_step"
+        app:layout_constraintTop_toBottomOf="@+id/task_step"
+        tools:ignore="LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_add_gesture_btn"
+        android:gravity="center"
+        android:text="@string/back"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_count" />
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="120dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/shape_add_gesture_btn"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="#ffffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

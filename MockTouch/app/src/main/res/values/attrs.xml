@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GestureOverlayView specific attributes. These attributes are used to configure
+      a GestureOverlayView from XML. -->
+    <declare-styleable name="GestureCaptureView">
+        <!-- Width of the stroke used to draw the gesture. -->
+        <attr name="android:gestureStrokeWidth" />
+        <!-- Color used to draw a gesture. -->
+        <attr name="android:gestureColor" />
+        <!-- Color used to draw the user's strokes until we are sure it's a gesture. -->
+        <attr name="android:uncertainGestureColor" />
+        <!-- Time, in milliseconds, to wait before the gesture fades out after the user
+             is done drawing it. -->
+        <attr name="android:fadeOffset" />
+        <!-- Duration, in milliseconds, of the fade out effect after the user is done
+             drawing a gesture. -->
+        <attr name="android:fadeDuration" />
+        <!-- Defines the type of strokes that define a gesture. -->
+        <attr name="android:gestureStrokeType">
+            <!-- A gesture is made of only one stroke. -->
+            <enum name="single" value="0" />
+            <!-- A gesture is made of multiple strokes. -->
+            <enum name="multiple" value="1" />
+        </attr>
+        <!-- Minimum length of a stroke before it is recognized as a gesture. -->
+        <attr name="android:gestureStrokeLengthThreshold" />
+        <!-- Squareness threshold of a stroke before it is recognized as a gesture. -->
+        <attr name="android:gestureStrokeSquarenessThreshold" />
+        <!-- Minimum curve angle a stroke must contain before it is recognized as a gesture. -->
+        <attr name="android:gestureStrokeAngleThreshold" />
+        <!-- Defines whether the overlay should intercept the motion events when a gesture
+             is recognized. -->
+        <attr name="android:eventsInterceptionEnabled" />
+        <!-- Defines whether the gesture will automatically fade out after being recognized. -->
+        <attr name="android:fadeEnabled" />
+        <!-- Indicates whether horizontal (when the orientation is vertical) or vertical
+             (when orientation is horizontal) strokes automatically define a gesture. -->
+        <attr name="orientation" />
+    </declare-styleable>
+
+    <attr name="orientation">
+        <!-- Defines an horizontal widget. -->
+        <enum name="horizontal" value="0" />
+        <!-- Defines a vertical widget. -->
+        <enum name="vertical" value="1" />
+    </attr>
+</resources>

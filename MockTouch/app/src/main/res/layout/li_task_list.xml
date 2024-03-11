@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_start_task_item">
+
+    <TextView
+        android:id="@+id/task"
+        style="@style/TaskStepItem"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="start|center_vertical"
+        tools:text="dsdsddsdsd"
+        tools:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_vertical"
+        android:padding="6dp"
+        app:tint="#ffffff"
+        android:src="@drawable/ic_task_step_delete"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
